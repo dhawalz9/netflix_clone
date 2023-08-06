@@ -40,8 +40,8 @@ a {
         
     }
 
-    > svg {
-        color: white;
+    > svg {   // svg is refering to the search symbol on the right side of the header
+        color: rgb(255, 255, 255);
         font-size: 2rem;
         cursor: pointer;
         
