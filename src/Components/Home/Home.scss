@@ -6,13 +6,23 @@ $bg: rgb(16, 16, 16);
 }
 
 .row{
-
+    background-color: $bg;
+    padding: 1rem;
+    > h2 {
+        font-weight: 400;
+        margin: 0.3rem;
+    }
+    > div {
+        display: flex;
+        overflow-x: auto;
+    }
 }
 
 .card{
     width: 200px;
+    margin: 0.3rem;
     cursor: pointer;
-    transition: 0.5s;
+    transition: transform 0.5s;
     &:hover {
         transform: translateY(-10px) scale(1.05);
     }
