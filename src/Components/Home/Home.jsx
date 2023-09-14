@@ -28,7 +28,7 @@ const Row =({title, arr=[]})=>(
 
     <div>
       {
-        arr.map((item, index)=>(                // if we wnt to use {} instead of () (after =>) then we nees to put a return before <Card>
+        arr.map((item, index)=>(                // if we wnt to use {} instead of () (after =>) then we need to put a return before <Card>
         <Card key={index} img={`${imgUrl}/${item.poster_path}`}/>
         ))
       }
@@ -89,7 +89,7 @@ const Home = () => {
     fetchNowPlaying();
     fetchPopular();
     fetchTopRated();
-  })
+  },[]);
 
   // fetch(url, options)
   // .then(res => res.json())
